@@ -9,12 +9,12 @@
 #include <QDir>
 #include <QStandardItem>
 #include <sstream>
+
+#include "invoicedatabasewindow.h"
+#include "productdatabasewindow.h"
+
 #include "invoice.h"
 #include "product.h"
-#include "addinvoice.h"
-#include "additem.h"
-#include "filter.h"
-#include "updateitem.h"
 #include "app.h"
 
 QT_BEGIN_NAMESPACE
@@ -32,20 +32,19 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_add_btn_clicked();
 
-    void on_change_btn_clicked();
+     void on_inv_btn_clicked();
 
-    void on_filter_btn_clicked();
+     void on_pro_btn_clicked();
 
-    void on_exit_btn_clicked();
+     void on_exit_btn_clicked();
 
 private:
     Ui::MainWindow *ui;
 
+    InvoiceDatabaseWindow *inv_ptr;
+    ProductDatabaseWindow *pro_ptr;
+
     App *CoreApp;
-    AddInvoice *ptrAddInvoice;
-    filter *ptrFilter;
-    UpdateItem *ptrUpdateItem;
 };
 #endif // MAINWINDOW_H

@@ -1,7 +1,6 @@
 #include "app.h"
 
 App::App() {
-    std::cout << "CoreApp starts...."  <<std::endl;
     //std::cout << time(0) << std::endl;
 }
 std::string App::addNewInvoiceToDb(std::string type, std::string code) {
@@ -28,7 +27,6 @@ std::string App::addNewInvoiceToDb(std::string type, std::string code) {
 }
 
 App::~App() {
-    std::cout <<"Core App closed!"<<std::endl;
 }
 
 void App::addExistingInvoiceToDb(string id, string strtime) {

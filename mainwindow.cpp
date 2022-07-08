@@ -6,6 +6,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->setFixedSize(450, 450);
+
     CoreApp = new App();
 
 //    Load products.csv to database
@@ -61,14 +63,12 @@ MainWindow::MainWindow(QWidget *parent)
 
     invoices_file.close();
 
-    ptrAddInvoice = new AddInvoice(this, CoreApp);
-    ptrUpdateItem = new UpdateItem(this, CoreApp);
-    ptrFilter = new filter(this, CoreApp);
+    inv_ptr = new InvoiceDatabaseWindow;
+    pro_ptr = new ProductDatabaseWindow;
 }
 
 MainWindow::~MainWindow()
 {
-    std::cout <<"MainWindow closed!" <<std::endl;
     QFile products_file(product_filepath);
     if (products_file.open(QFile::WriteOnly | QFile::Truncate | QFile::Text))
     {
@@ -134,27 +134,26 @@ MainWindow::~MainWindow()
 
     delete ui;
     delete CoreApp;
-    delete ptrAddInvoice;
-    delete ptrUpdateItem;
-    delete ptrFilter;
+    delete inv_ptr;
+    delete pro_ptr;
 }
 
-void MainWindow::on_add_btn_clicked()
+
+
+void MainWindow::on_inv_btn_clicked()
 {
-    ptrAddInvoice->Show();
+    inv_ptr->show();
 }
 
-void MainWindow::on_change_btn_clicked()
+
+void MainWindow::on_pro_btn_clicked()
 {
-    ptrUpdateItem->Show();
+    pro_ptr->show();
 }
 
-void MainWindow::on_filter_btn_clicked()
-{
-    ptrFilter->Show();
-}
 
 void MainWindow::on_exit_btn_clicked()
 {
     close();
 }
+
