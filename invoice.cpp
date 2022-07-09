@@ -51,7 +51,7 @@ void Invoice::removeProduct(string name) {
     list_of_products.erase(name);
 }
 
-string getTimestampAsStr() {
+string Invoice::getTimestampAsStr() {
     struct tm *ltm = localtime(&created_at);
     char buffer[50];
     strftime(buffer, 50, "%Y-%m-%d %H:%M:%S", ltm);
