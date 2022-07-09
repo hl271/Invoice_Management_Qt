@@ -41,6 +41,7 @@ public:
     virtual bool isIncoming()=0;
     virtual bool isDomestic()=0;
     std::time_t getTimestamp();
+    string getTimestampAsStr();
     bool checkIfProductExists(std::string);//PQH
     std::vector<std::string> get_list_of_product_ID();//PQH
     unordered_map<string, struct ProductWithQuantity> get_list_of_products();//PQH

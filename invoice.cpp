@@ -51,6 +51,14 @@ void Invoice::removeProduct(string name) {
     list_of_products.erase(name);
 }
 
+string getTimestampAsStr() {
+    struct tm *ltm = localtime(&created_at);
+    char buffer[50];
+    strftime(buffer, 50, "%Y-%m-%d %H:%M:%S", ltm);
+    string s(buffer);
+    return s;
+}
+
 //double Invoice::calculateTotal() {
 //    double total = 0.0;
 //    for (auto i = list_of_products.begin(); i != list_of_products.end(); i++) {
