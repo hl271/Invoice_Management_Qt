@@ -7,19 +7,17 @@
 class Product
 {
 private:
-    std::string name_of_product;
-    int unit_price;
+    double unit_price;
     std::string id;
 public:
     Product();
-    Product(std::string _id, std::string _name, double _price);
+    Product(std::string _id, double _price);
     // Accessing
-    std::string getProduceName();
     double getUnitPrice();
     std::string getID();
     // Modify
-    void setName(std::string);
     void setUnitPrice(double);
+    void setID(std::string);
 };
 
 #endif // PRODUCT_H

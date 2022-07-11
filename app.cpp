@@ -1,7 +1,6 @@
 #include "app.h"
 
 App::App() {
-    std::cout << "CoreApp starts...."  <<std::endl;
     //std::cout << time(0) << std::endl;
 }
 std::string App::addNewInvoiceToDb(std::string type, std::string code) {
@@ -28,7 +27,6 @@ std::string App::addNewInvoiceToDb(std::string type, std::string code) {
 }
 
 App::~App() {
-    std::cout <<"Core App closed!"<<std::endl;
 }
 
 void App::addExistingInvoiceToDb(string id, string strtime) {
@@ -50,13 +48,13 @@ void App::addExistingInvoiceToDb(string id, string strtime) {
     IDS_INVOICE.push_back(id);
 }
 
-void App::addNewProductToDb(std::string id, string name, double price) {
-    DB_PRODUCT[id] = Product(id, name, price);
+void App::addNewProductToDb(std::string id, double price) {
+    DB_PRODUCT[id] = Product(id, price);
     IDS_PRODUCT.push_back(id);
 }
 
-void App::addExistingProductToDb(string id, string name, double price) {
-    DB_PRODUCT[id] = Product(id, name, price);
+void App::addExistingProductToDb(string id, double price) {
+    DB_PRODUCT[id] = Product(id, price);
     IDS_PRODUCT.push_back(id);
 }
 
@@ -86,7 +84,7 @@ bool App::editProductInInvoice(string inv_id, string product_id, int quantity) {
 
 bool App::removeProductFromInvoice(string inv_id, string product_id){
     if (DB_INVOICE.find(inv_id) == DB_INVOICE.end()) {
-        cout << "Invoice id " << inv_id << "not found!" << endl;
+//        cout << "Invoice id " << inv_id << "not found!" << endl;
         return false;
     }
     else {
@@ -96,7 +94,7 @@ bool App::removeProductFromInvoice(string inv_id, string product_id){
 }
 bool App::removeInvoice(string inv_id) {
     if (DB_INVOICE.find(inv_id) == DB_INVOICE.end()) {
-        cout << "No invoice found!";
+//        cout << "No invoice found!";
         return false;
     }
     else {
@@ -192,9 +190,27 @@ double App::calculateProfitByTimeRange(string start_day, string end_day) {
     vector<string> filtered_invs = searchByTimeRange(start_day, end_day);
     for (auto i = filtered_invs.begin(); i != filtered_invs.end(); i++) {
         Invoice* inv = DB_INVOICE[*i];
-        double total = inv->getProfit();//PQH
+        double total = inv->calculateTotal();
         double tax_payment = total * inv->getTax();
-        if (inv->isIncoming()) {
+        if (!inv->isIncoming()) {
+            profit += total - tax_payment;
+        }
+        else {
+            profit += -total - tax_payment;
+        }
+    }
+    return profit;
+}
+
+double App::calculateProfit()
+{
+    double profit = 0.0;
+
+    for (auto i = IDS_INVOICE.begin(); i != IDS_INVOICE.end(); i++) {
+        Invoice* inv = DB_INVOICE[*i];
+        double total = inv->calculateTotal();
+        double tax_payment = total * inv->getTax();
+        if (!inv->isIncoming()) {
             profit += total - tax_payment;
         }
         else {

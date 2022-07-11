@@ -31,11 +31,11 @@ public:
     App();
     ~App();
     //Product
-    void addNewProductToDb(std::string id, std::string name, double price);
-    void addExistingProductToDb(std::string id, std::string name, double price);
+    void addNewProductToDb(std::string id, double price);
+    void addExistingProductToDb(std::string id, double price);
 
     // Invoices
-    std::string addNewInvoiceToDb(std::string type_as_str, std::string code);
+    std::string addNewInvoiceToDb(std::string type_as_str, std::string code = "");
     // strtime has format %Y-%m-%d %H:%M:%S
     void addExistingInvoiceToDb(std::string id, std::string time);
     bool addProductToInvoice(std::string inv_id, std::string product_id, int quantity);
@@ -50,8 +50,11 @@ public:
     //time has format %Y-%m-%d
     std::vector<std::string> searchByTimeRange(std::string start_day, std::string end_day);//PQH change
 
-    //Calulate profit by time range
+    //Calculate profit by time range
     double calculateProfitByTimeRange(std::string start_day, std::string end_day);
+
+    //Calculate total profit
+    double calculateProfit();
 
     //Helper methods
     time_t convertStringTimeFormat1(std::string strtime);
