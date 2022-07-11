@@ -21,8 +21,8 @@
     <widget class="QPushButton" name="filter_btn">
      <property name="text">
       <string>Filter</string>
-   </property>
-  </widget>
+     </property>
+    </widget>
    </item>
    <item row="0" column="0" colspan="3">
     <widget class="QLineEdit" name="filter_val"/>
@@ -33,15 +33,15 @@
       <widget class="QLabel" name="type_lbl">
        <property name="text">
         <string>Type:</string>
-   </property>
+       </property>
       </widget>
      </item>
      <item>
       <widget class="QLabel" name="type">
-   <property name="text">
+       <property name="text">
         <string/>
-   </property>
-  </widget>
+       </property>
+      </widget>
      </item>
     </layout>
    </item>
@@ -49,7 +49,7 @@
     <widget class="QLabel" name="label">
      <property name="text">
       <string>Select Criteria</string>
-   </property>
+     </property>
     </widget>
    </item>
    <item row="2" column="0" colspan="4">
@@ -105,207 +105,112 @@
     </widget>
    </item>
    <item row="4" column="0" colspan="4">
-   <layout class="QHBoxLayout" name="date">
-    <item>
-     <widget class="QLabel" name="from_label">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-      <property name="text">
-       <string>From:</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QDateTimeEdit" name="start_date">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-      <property name="frame">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLabel" name="to_label">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-      <property name="text">
-       <string>to</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QDateTimeEdit" name="end_date">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-   </layout>
+    <layout class="QHBoxLayout" name="date">
+     <item>
+      <widget class="QLabel" name="from_label">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string>From:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateTimeEdit" name="start_date">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="to_label">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string>to</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateTimeEdit" name="end_date">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </item>
    <item row="5" column="0" colspan="2">
     <layout class="QHBoxLayout" name="horizontalLayout">
-    <item>
+     <item>
       <widget class="QLabel" name="date_lbl">
-      <property name="text">
+       <property name="text">
         <string>Created at:</string>
-      </property>
-     </widget>
-    </item>
-    <item>
+       </property>
+      </widget>
+     </item>
+     <item>
       <widget class="QDateTimeEdit" name="date_2"/>
      </item>
     </layout>
    </item>
    <item row="8" column="3">
     <widget class="QPushButton" name="close_btn">
-      <property name="text">
+     <property name="text">
       <string>Close</string>
-      </property>
-     </widget>
-    </item>
+     </property>
+    </widget>
+   </item>
    <item row="3" column="0" colspan="2">
     <widget class="QComboBox" name="type_2">
-    <item>
-     <widget class="QRadioButton" name="rdo_df">
+     <item>
       <property name="text">
        <string>Domestic</string>
       </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QPushButton" name="filter_btn">
-   <property name="geometry">
-    <rect>
-     <x>420</x>
-     <y>20</y>
-     <width>80</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Filter</string>
-   </property>
-  </widget>
-  <widget class="QWidget" name="layoutWidget_3">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>130</y>
-     <width>230</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="type1">
-    <item>
-     <widget class="QRadioButton" name="rdo_export">
+     </item>
+     <item>
       <property name="text">
        <string>Foreign</string>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QRadioButton" name="rdo_import">
+     </item>
+     <item>
       <property name="text">
        <string>Import</string>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QRadioButton" name="rdo_ie">
+     </item>
+     <item>
       <property name="text">
        <string>Export</string>
       </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="layoutWidget_4">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>90</y>
-     <width>481</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="criteria">
-    <item>
-     <widget class="QRadioButton" name="rdo_code">
-      <property name="autoFillBackground">
-       <bool>false</bool>
-      </property>
+     </item>
+     <item>
       <property name="text">
        <string>Domestic Import</string>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QRadioButton" name="rdo_date">
+     </item>
+     <item>
       <property name="text">
        <string>Domestic Export</string>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QRadioButton" name="rdo_item">
+     </item>
+     <item>
       <property name="text">
        <string>Foreign Import</string>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QRadioButton" name="rdo_type">
+     </item>
+     <item>
       <property name="text">
        <string>Foreign Export</string>
       </property>
      </item>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>60</y>
-     <width>370</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Select Criteria</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>270</x>
-     <y>510</y>
-     <width>111</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Total Profit:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="total_profit">
-   <property name="geometry">
-    <rect>
-     <x>384</x>
-     <y>510</y>
-     <width>111</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>
