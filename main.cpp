@@ -1,3 +1,4 @@
+// GUI - Pham Quang Huy
 #include "mainwindow.h"
 
 #include <QApplication>

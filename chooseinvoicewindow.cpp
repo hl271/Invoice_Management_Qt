@@ -1,3 +1,4 @@
+// GUI - Pham Quang Huy
 #include "chooseinvoicewindow.h"
 #include "ui_chooseinvoicewindow.h"
 

@@ -1,3 +1,4 @@
+// CORE APP - Dang Hoang Lan
 #ifndef APP_H
 #define APP_H
 

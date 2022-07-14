@@ -1,3 +1,4 @@
+// GUI - Pham Quang Huy
 #include "deleteproductdbwindow.h"
 #include "ui_deleteproductdbwindow.h"
 

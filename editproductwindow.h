@@ -1,3 +1,4 @@
+// GUI - Do Hoang Khoi
 #ifndef EDITPRODUCTWINDOW_H
 #define EDITPRODUCTWINDOW_H
 

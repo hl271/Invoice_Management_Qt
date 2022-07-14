@@ -1,3 +1,4 @@
+// GUI - Do Hoang Khoi
 #ifndef DELETEPRODUCTDBWINDOW_H
 #define DELETEPRODUCTDBWINDOW_H
 

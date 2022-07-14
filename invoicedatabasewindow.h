@@ -1,3 +1,4 @@
+// GUI - Do Hoang Khoi
 #ifndef INVOICEDATABASEWINDOW_H
 #define INVOICEDATABASEWINDOW_H
 

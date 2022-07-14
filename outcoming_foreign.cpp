@@ -1,3 +1,4 @@
+// CORE APP - Dang Hoang Lan
 #include "outcoming_foreign.h"
 
 bool Outcoming_Foreign::isDomestic() { return false; }

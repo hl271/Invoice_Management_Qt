@@ -1,3 +1,4 @@
+// GUI - Pham Quang Huy
 #include "chooseproductwindow.h"
 #include "ui_chooseproductwindow.h"
 

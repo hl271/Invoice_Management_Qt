@@ -1,3 +1,4 @@
+// GUI - Pham Quang Huy
 #include "filterwindow.h"
 #include "ui_filterwindow.h"
 

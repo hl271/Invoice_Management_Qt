@@ -1,3 +1,4 @@
+// CORE APP - Dang Hoang Lan
 #include "app.h"
 
 App::App() {

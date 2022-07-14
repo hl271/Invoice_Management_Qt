@@ -1,3 +1,4 @@
+// GUI - Pham Quang Huy
 #include "editexstingproductwindow.h"
 #include "ui_editexstingproductwindow.h"
 

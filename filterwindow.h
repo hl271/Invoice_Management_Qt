@@ -1,3 +1,4 @@
+// GUI - Do Hoang Khoi
 #ifndef FILTERWINDOW_H
 #define FILTERWINDOW_H
 

@@ -1,3 +1,4 @@
+// GUI - Pham Quang Huy
 #include "addnewproductwindow.h"
 #include "ui_addnewproductwindow.h"
 

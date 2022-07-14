@@ -1,3 +1,4 @@
+// CORE APP - Dang Hoang Lan
 #ifndef OUTCOMING_FOREIGN_H
 #define OUTCOMING_FOREIGN_H
 

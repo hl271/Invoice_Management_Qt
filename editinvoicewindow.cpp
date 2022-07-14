@@ -1,3 +1,4 @@
+// GUI - Pham Quang Huy
 #include "editinvoicewindow.h"
 #include "ui_editinvoicewindow.h"
 

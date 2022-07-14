@@ -1,3 +1,4 @@
+// GUI - Do Hoang Khoi
 #ifndef EDITINVOICEWINDOW_H
 #define EDITINVOICEWINDOW_H
 

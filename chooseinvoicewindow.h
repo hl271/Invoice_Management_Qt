@@ -1,3 +1,4 @@
+// GUI - Do Hoang Khoi
 #ifndef CHOOSEINVOICEWINDOW_H
 #define CHOOSEINVOICEWINDOW_H
 

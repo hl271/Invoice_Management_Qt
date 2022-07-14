@@ -1,3 +1,4 @@
+// GUI - Do Hoang Khoi
 #ifndef PRODUCTDATABASEWINDOW_H
 #define PRODUCTDATABASEWINDOW_H
 

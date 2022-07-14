@@ -1,3 +1,4 @@
+// CORE APP - Dang Hoang Lan
 #include "invoice.h"
 
 std::string Invoice::getId()

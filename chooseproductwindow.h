@@ -1,3 +1,4 @@
+// GUI - Do Hoang Khoi
 #ifndef CHOOSEPRODUCTWINDOW_H
 #define CHOOSEPRODUCTWINDOW_H
 

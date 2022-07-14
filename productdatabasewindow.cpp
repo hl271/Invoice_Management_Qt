@@ -1,3 +1,4 @@
+// GUI - Pham Quang Huy
 #include "productdatabasewindow.h"
 #include "ui_productdatabasewindow.h"
 

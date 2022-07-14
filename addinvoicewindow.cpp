@@ -1,3 +1,4 @@
+// GUI - Pham Quang Huy
 #include "addinvoicewindow.h"
 #include "ui_addinvoicewindow.h"
 

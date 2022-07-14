@@ -1,3 +1,4 @@
+// GUI - Pham Quang Huy
 #include "invoicedatabasewindow.h"
 #include "ui_invoicedatabasewindow.h"
 

@@ -1,3 +1,4 @@
+// CORE APP - Dang Hoang Lan
 #ifndef INVOICE_H
 #define INVOICE_H
 

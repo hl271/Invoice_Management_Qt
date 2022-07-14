@@ -1,3 +1,4 @@
+// CORE APP - Dang Hoang Lan
 #include "product.h"
 
 Product::Product()

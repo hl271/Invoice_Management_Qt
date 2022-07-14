@@ -1,3 +1,4 @@
+// CORE APP - Dang Hoang Lan
 #ifndef PRODUCT_H
 #define PRODUCT_H
 
